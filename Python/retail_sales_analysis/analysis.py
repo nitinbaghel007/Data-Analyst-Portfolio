@@ -48,3 +48,9 @@ store_type_sales = df.groupby('store_type')['total_amount'].sum()
 
 print("Store Type Wise Sales:")
 print(store_type_sales)
+
+# Step 3.3: City wise total sales
+city_sales = df.groupby('city')['total_amount'].sum().sort_values(ascending=False)
+
+print("City Wise Sales:")
+print(city_sales)
