@@ -42,3 +42,9 @@ print(df[['visit_date', 'year', 'month', 'day']].head())
 total_sales = df['total_amount'].sum()
 
 print("Total Sales:", total_sales)
+
+# Step 3.2: Store type wise total sales
+store_type_sales = df.groupby('store_type')['total_amount'].sum()
+
+print("Store Type Wise Sales:")
+print(store_type_sales)
