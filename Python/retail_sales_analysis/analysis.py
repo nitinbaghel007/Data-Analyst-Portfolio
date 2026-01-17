@@ -37,3 +37,8 @@ df['day'] = df['visit_date'].dt.day
 
 print("\nDate features added:")
 print(df[['visit_date', 'year', 'month', 'day']].head())
+
+# Step 3.1: Total sales
+total_sales = df['total_amount'].sum()
+
+print("Total Sales:", total_sales)
