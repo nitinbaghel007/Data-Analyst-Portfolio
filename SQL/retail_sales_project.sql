@@ -81,3 +81,20 @@ ORDER BY total_visits DESC;
 -- =====================================================
 -- END OF PROJECT
 -- =====================================================
+/*
+=================================================
+KEY INSIGHTS SUMMARY
+=================================================
+1. Mall stores generated the highest total revenue.
+2. Top 5 customers contribute a significant portion of overall sales.
+3. Certain dates show revenue spikes, indicating high footfall days.
+4. Average bill value varies across different store types.
+
+=================================================
+BUSINESS RECOMMENDATIONS
+=================================================
+- Focus marketing efforts on high-performing store types.
+- Introduce loyalty programs for top customers.
+- Optimize staffing and inventory on peak sales days.
+- Improve strategies for low-performing store types.
+*/
