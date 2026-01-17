@@ -70,3 +70,10 @@ daily_sales = df.groupby('visit_date')['total_amount'].sum()
 
 print("Daily Sales Trend:")
 print(daily_sales)
+
+# Step 4: Key insights summary
+print("\nKey Insights:")
+print("- Mall stores generate higher revenue than Local stores.")
+print("- Delhi and Agra are top performing cities.")
+print("- A small number of customers contribute a large portion of sales.")
+print("- Sales vary significantly across different days.")
