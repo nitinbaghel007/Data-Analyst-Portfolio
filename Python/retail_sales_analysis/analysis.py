@@ -8,3 +8,32 @@ df = pd.read_csv(file_path)
 
 # Data ke first 5 rows dekhna
 print(df.head())
+# Step 2.1: Data ka shape (rows, columns)
+print("Shape of data:", df.shape)
+
+# Step 2.2: Column names
+print("\nColumn names:")
+print(df.columns)
+
+# Step 2.3: Data types
+print("\nData types:")
+print(df.dtypes)
+
+# Step 2.4: Basic information
+print("\nData info:")
+print(df.info())
+# Step 3.1: Missing values check
+print("\nMissing values in each column:")
+print(df.isnull().sum())
+# Step 3.2: Convert visit_date to datetime
+df['visit_date'] = pd.to_datetime(df['visit_date'])
+
+print("\nAfter date conversion:")
+print(df.dtypes)
+# Step 3.3: Extract year, month, day from visit_date
+df['year'] = df['visit_date'].dt.year
+df['month'] = df['visit_date'].dt.month
+df['day'] = df['visit_date'].dt.day
+
+print("\nDate features added:")
+print(df[['visit_date', 'year', 'month', 'day']].head())
