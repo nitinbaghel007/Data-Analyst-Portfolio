@@ -54,3 +54,13 @@ city_sales = df.groupby('city')['total_amount'].sum().sort_values(ascending=Fals
 
 print("City Wise Sales:")
 print(city_sales)
+
+# Step 3.4: Top customers by total spend
+top_customers = (
+    df.groupby('customer_name')['total_amount']
+    .sum()
+    .sort_values(ascending=False)
+)
+
+print("Top Customers by Total Spend:")
+print(top_customers)
