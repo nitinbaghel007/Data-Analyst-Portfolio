@@ -64,3 +64,9 @@ top_customers = (
 
 print("Top Customers by Total Spend:")
 print(top_customers)
+
+# Step 3.5: Daily sales trend
+daily_sales = df.groupby('visit_date')['total_amount'].sum()
+
+print("Daily Sales Trend:")
+print(daily_sales)
