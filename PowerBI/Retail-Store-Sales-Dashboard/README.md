@@ -38,3 +38,7 @@ It provides insights into revenue trends, category performance, and key business
 
 ## 📷 Dashboard Preview
 (Screenshot will be added here)
+## 📊 Dashboard Preview
+
+![Dashboard Screenshot](power_bi_ss.jpeg)
+
